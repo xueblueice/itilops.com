@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>ITIL-OPS应用程序管理服务平台</title>
+    <!-- Bootstrap -->
+    <link href="bower_components/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="dist/css/it-service.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="home.html"><img src="dist/img/nav-logo.png"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li role="presentation" class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                产品特性 <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="home02_CN.html">标准化的ITIL流程</a></li>
+                <li><a href="home03_CN.html">DevOps交付流水线</a></li>
+                <li><a href="home04_CN.html">监控仪表盘</a></li>
+              </ul>
+            </li>
+            <!--li><a href="#about">解决方案</a></li-->
+            <!--li><a href="#contact">客户案例</a></li-->
+            <li><a href="#contact">合作伙伴</a></li>
+            <li class="active"><a href="#contact">预约演示</a></li-->
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="mar-top-82 box-form">
+      <div class="container">
+        <div class="row mar-top-60 mar-bot-60">
+          <div class="col-md-6" style="padding-right: 60px;">
+            <h1>预约ITIL-OPS产品演示</h1>
+            <p>我们的产品顾问为您详细讲解产品特性和行业解决方案</p>
+            <hr>
+            <h3>您将会了解到：</h3>
+            <ul>
+              <li><i class="fa fa-fw fa-check-circle"></i> ITIL-OPS如何提供比以往更快、更智能、更自动化的应用程序服务管理体验</li>
+              <li><i class="fa fa-fw fa-check-circle"></i> 新一代DevOps平台，如何建立统一的软件交付流水线，支撑业务飞速发展</li>
+            </ul>
+          </div>
+          <div class="col-md-6 card-03">
+            <form id="defaultForm" method="POST">
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-addon"><i class="fa fa-fw fa-user"></i> 姓名</div>
+                  <input type="text" class="form-control" id="username" name="username" placeholder="" required title="请输入您的姓名">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-addon"><i class="fa fa-fw  fa-building"></i> 公司</div>
+                  <input type="text" class="form-control" id="company" name="company" placeholder="" required title="请输入您的公司名称">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-addon"><i class="fa fa-fw  fa-black-tie"></i> 职位</div>
+                  <input type="text" class="form-control" id="position" name="position" placeholder="" required title="请输入您的职位">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-addon"><i class="fa fa-fw fa-phone"></i> 电话</div>
+                  <input type="text" class="form-control" id="phone" name="phone" placeholder="" required title="请输入您的联系电话">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-addon"><i class="fa fa-fw  fa-envelope"></i> 邮件</div>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="" required title="请输入您的办公邮件">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-addon"><i class="fa fa-fw  fa-pencil"></i> 留言</div>
+                  <textarea row="5" class="form-control" id="content" name="content" placeholder="" title="请输入您关心的问题"></textarea>
+                </div>
+              </div>
+              <div class="form-group">
+                <!--button type="button" class="btn-service03" data-toggle="modal" data-target=".bs-example-modal-sm">提交信息</button-->
+                <button type="submit" id="submitbtn" class="btn-service03">提交信息</button>
+              </div>
+              <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"  id="myModal">
+                <div class="modal-dialog modal-sm" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                      <h4 class="modal-title" id="mySmallModalLabel">提示信息：</h4>
+                    </div>
+                    <div class="modal-body text-center">
+                      <i class="fa fa-fw fa-check-circle fa-2x text-success"></i><br>
+                      <p>提交成功！</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabelfalied"  id="myModalfailed">
+                <div class="modal-dialog modal-sm" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                      <h4 class="modal-title" id="mySmallModalLabelfalied">提示信息：</h4>
+                    </div>
+                    <div class="modal-body text-center">
+                      <i class="fa fa-fw fa-check-circle fa-2x text-success"></i><br>
+                      <p>提交失败！</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </form>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+
+
+      <footer id="footer" style="position: fixed;bottom: 0;z-index: 5;">
+        <div class="container">
+          <p>© Copyright 2018</p>
+        </div>
+      </footer>
+
+    
+
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="bower_components/bootstrap/js/jquery.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="bower_components/bootstrap/js/bootstrap.min.js"></script>
+    <script src="dist/js/frm.js"></script>
+
+  </body>
+</html>
