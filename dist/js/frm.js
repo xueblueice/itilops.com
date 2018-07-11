@@ -8,7 +8,7 @@ $(function () {
         var p = '{"id": "id","profile": "intg","from": "itilops@itilops.com","to": "bj_intg@163.com","subject": "Mail from itilops.com","body": "'+submitData+'"}';
         
         $.ajax({
-            url:'http://www.itilops.com/api/mail/send',
+            url:'https://www.itilops.com/api/mail/send',
             data:p,
             type: "POST",
             dataType: "json",
